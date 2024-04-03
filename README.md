@@ -1,26 +1,30 @@
 ---
-name: ChatGPT + Enterprise data
-description: Chat with your data using OpenAI and AI Search.
+name: LGPT (LeyGPT)
+description: Get accurate answers on the Mexican Work Law using OpenAI and AI Search.
 languages:
 - python
 - typescript
 - bicep
 - azdeveloper
 products:
-- azure-openai
+- openai API
 - azure-cognitive-search
 - azure-app-service
 - azure
-page_type: sample
+page_type: Work in progress
 urlFragment: azure-search-openai-demo
 ---
 
-# ChatGPT + Enterprise data with Azure OpenAI and AI Search
+# ChatGPT + Governemnt data with Azure OpenAI and AI Search
 
 > [!IMPORTANT]
+<<<<<<< HEAD
+> This is a work in progress with the long term vision of building a chatbot with national availability and sponsor from the government to keep this resource active and available as well to expand upon the documents to be used which ideally would be all the Mexican Law books!, Right now this is a very usable proof of concept that you can deploy for free and use with minimal costs by incurring only on the Open AI costs of the models use of what is possible with the Azure platform. 
+=======
 > As of November 15, 2023, Azure Cognitive Search has been renamed to Azure AI Search.
 
 ### Announcing [**JavaScript**](https://aka.ms/azai/js/code), [**.NET**](https://aka.ms/azai/net/code), and [**Java**](https://aka.ms/azai/java/code) samples based on this one ([**Python**](https://aka.ms/azai/py/code)). Learn more at  https://aka.ms/azai.
+>>>>>>> 9e76dc3618347afb937dc6b9496217d20ae683e0
 
 ## Table of Contents
 
@@ -34,6 +38,8 @@ urlFragment: azure-search-openai-demo
     - [Local environment](#local-environment)
   - [Deploying](#deploying)
   - [Deploying again](#deploying-again)
+<<<<<<< HEAD
+=======
 - [Sharing environments](#sharing-environments)
 - [Using the app](#using-the-app)
 - [Running locally](#running-locally)
@@ -43,14 +49,19 @@ urlFragment: azure-search-openai-demo
 - [Clean up](#clean-up)
 - [Troubleshooting](#troubleshooting)
 - [Resources](#resources)
+>>>>>>> 9e76dc3618347afb937dc6b9496217d20ae683e0
 
 
 [![Open in GitHub Codespaces](https://img.shields.io/static/v1?style=for-the-badge&label=GitHub+Codespaces&message=Open&color=brightgreen&logo=github)](https://github.com/codespaces/new?hide_repo_select=true&ref=main&repo=599293758&machine=standardLinux32gb&devcontainer_path=.devcontainer%2Fdevcontainer.json&location=WestUs2)
 [![Open in Dev Containers](https://img.shields.io/static/v1?style=for-the-badge&label=Dev%20Containers&message=Open&color=blue&logo=visualstudiocode)](https://vscode.dev/redirect?url=vscode://ms-vscode-remote.remote-containers/cloneInVolume?url=https://github.com/azure-samples/azure-search-openai-demo)
 
+<<<<<<< HEAD
+This sample demonstrates how to create a ChatGPT-like experience over public data using the Retrieval Augmented Generation pattern. It uses Azure OpenAI Service to access the ChatGPT model (gpt-4), and Azure AI Search for data indexing and retrieval.
+=======
 This sample demonstrates a few approaches for creating ChatGPT-like experiences over your own data using the Retrieval Augmented Generation pattern. It uses Azure OpenAI Service to access a GPT model (gpt-35-turbo), and Azure AI Search for data indexing and retrieval.
+>>>>>>> 9e76dc3618347afb937dc6b9496217d20ae683e0
 
-The repo includes sample data so it's ready to try end to end. In this sample application we use a fictitious company called Contoso Electronics, and the experience allows its employees to ask questions about the benefits, internal policies, as well as job descriptions and roles.
+The repo includes the latest Mexican federal work law so it's ready to try end to end. The experience allows employees to ask questions about the benefits, rights, responsabilities, laws and course of actions to be taken in some circumstances. Below the architechture used.
 
 ![RAG Architecture](docs/images/appcomponents.png)
 
@@ -58,13 +69,16 @@ The repo includes sample data so it's ready to try end to end. In this sample ap
 
 * Chat and Q&A interfaces
 * Explores various options to help users evaluate the trustworthiness of responses with citations, tracking of source content, etc.
+<<<<<<< HEAD
+=======
 * Shows possible approaches for data preparation, prompt construction, and orchestration of interaction between model (OpenAI) and retriever (AI Search)
+>>>>>>> 9e76dc3618347afb937dc6b9496217d20ae683e0
 * Settings directly in the UX to tweak the behavior and experiment with options
 * Performance tracing and monitoring with Application Insights
 
 ![Chat screen](docs/images/chatscreen.png)
 
-[📺 Watch a video overview of the app.](https://youtu.be/3acB0OWmLvM)
+[📺 Watch a video overview of the app.](https://youtu.be/DNb0-8BzH8g)
 
 ## Azure account requirements
 
@@ -193,6 +207,8 @@ either you or they can follow these steps:
 1. Set the environment variable `AZURE_PRINCIPAL_ID` either in that `.env` file or in the active shell to their Azure ID, which they can get with `az ad signed-in-user show`.
 1. Run `./scripts/roles.ps1` or `.scripts/roles.sh` to assign all of the necessary roles to the user.  If they do not have the necessary permission to create roles in the subscription, then you may need to run this script for them. Once the script runs, they should be able to run the app locally.
 
+<<<<<<< HEAD
+=======
 ## Running locally
 
 You can only run locally **after** having successfully run the `azd up` command. If you haven't yet, follow the steps in [Azure deployment](#azure-deployment) above.
@@ -240,6 +256,7 @@ Once you successfully deploy the app, you can start customizing it for your need
 This sample is designed to be a starting point for your own production application,
 but you should do a thorough review of the security and performance before deploying
 to production. Read through our [productionizing guide](docs/productionizing.md) for more details.
+>>>>>>> 9e76dc3618347afb937dc6b9496217d20ae683e0
 
 ## Clean up
 
@@ -251,6 +268,8 @@ To clean up all the resources created by this sample:
 
 The resource group and all the resources will be deleted.
 
+<<<<<<< HEAD
+=======
 ## Troubleshooting
 
 Here are the most common failure scenarios and solutions:
@@ -284,6 +303,7 @@ Here are the most common failure scenarios and solutions:
 This is a sample built to demonstrate the capabilities of modern Generative AI apps and how they can be built in Azure.
 For help with deploying this sample, please post in [GitHub Issues](/issues). If you're a Microsoft employee, you can also post in [our Teams channel](https://aka.ms/azai-python-help).
 
+>>>>>>> 9e76dc3618347afb937dc6b9496217d20ae683e0
 This repository is supported by the maintainers, _not_ by Microsoft Support,
 so please use the support mechanisms described above, and we will do our best to help you out.
 
